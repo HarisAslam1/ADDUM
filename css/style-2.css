@@ -1,0 +1,118 @@
+:root {
+    --front-color: #000000;
+    --back-color: #f2f3f7;
+}
+html{
+    scroll-snap-type: y mandatory;
+}
+
+.video , .vision-mission , .feature ,.prototype,.design-test,.design,.founder,.team,.career,.footer{
+    scroll-snap-align: start;
+    background-color: var(--back-color);
+    /* padding: 100px 0px ; */
+}
+/* VISION-MISSION-START */
+.vision-mission{
+background:var(--back-color);
+
+height: 100vh;
+/* scroll-snap-type:y mandatory; */
+/* scroll-snap-align: start; */
+}
+.vision-text-adust ,.mission-text-adust{
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0.6em 0.6em 1.2em #d2dce9, -0.5em -0.5em 1em #ffffff;
+    border-radius: 50px;
+}
+.vision-text-style p, .mission-text-style p {
+    margin-top: 10px;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    font-weight: 500;
+}
+/* VISION-MISSION-END */
+/* FEATURE-START */
+.feature{
+    /* scroll-snap-type:y mandatory; */
+    /* scroll-snap-align: start; */
+    /* background-color: black; */
+    width: 100%;
+    height: 100vh;
+    color: #d2dce9;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    padding-top: 70px;
+}
+.feature-slider-header{
+    /* background-color: black; */
+    padding: 50px 0px;
+}
+.feature-slider{
+    /* background-color: black ; */
+    margin: 50px 0px;
+    
+}
+/* FEATURE-END */
+/* PROTOTYPE-START */
+.prototype{
+    background-color: var(--back-color);
+}
+/* PROTOTYPE-END */
+
+/* DESIGN-TEST-START */
+.design-test{
+    overflow: hidden;
+    background-color: var(--back-color);
+    padding: 55px 0px 105px 0px;
+}
+.design-test-item{
+    background-image: url(../img/12.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.design-test-slider{
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 370px;
+    
+}
+.design-test-item{
+    position: absolute;
+    width: 60%;
+    height: 420px;
+    text-align: justify;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    transition: 0.5s;
+    top: 0;
+}
+
+.design-test-slider-button{
+    z-index: 999;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+/* DESGIN-TEST-END */
+/* TEAM-START */
+.team{
+    background-color: var(--back-color);
+    padding: 100px 0px;
+}
+.team-card{
+    box-shadow: 0.6em 0.6em 1.2em #d2dce9, -0.5em -0.5em 1em #ffffff !important;
+    border-radius: 40px !important;
+}
+.team-card img{
+    border-top-left-radius:48px ;
+    border-top-right-radius:48px ;
+}
+/* TEAM-END */
